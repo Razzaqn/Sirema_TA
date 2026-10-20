@@ -1,0 +1,129 @@
+/* BACKGROUND OVERLAY */
+/* BACKGROUND */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+/* CONTENT (CENTER FIX) */
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: white;
+    border-radius: 16px;
+    width: 60%;
+    max-width: 650px;
+    overflow: hidden;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+/* HEADER */
+.modal-header {
+    background: #2563eb;
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* BODY */
+.modal-body {
+    padding: 20px;
+}
+
+/* SECTION */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h4 {
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+/* GRID SKALA */
+.grid-skala {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-skala div {
+    background: #f1f5f9;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HIGHLIGHT */
+.highlight {
+    background: #eff6ff;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #2563eb;
+}
+
+/* CLOSE */
+.close {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ddd;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.btn-panduan {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    background: #2563eb;
+    color: white;
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-panduan:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.btn-panduan:active {
+    transform: scale(0.98);
+}
